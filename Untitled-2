@@ -1,0 +1,123 @@
+              {fle.data.map(fle => {
+                if (fle.type === "h1") {
+                  return (
+                    <h1
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </h1>
+                  );
+                } else if (fle.type === "h2") {
+                  return (
+                    <h2
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </h2>
+                  );
+                } else if (fle.type === "h3") {
+                  return (
+                    <h3
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </h3>
+                  );
+                } else if (fle.type === "h4") {
+                  return (
+                    <h4
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </h4>
+                  );
+                } else if (fle.type === "h5") {
+                  return (
+                    <h5
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </h5>
+                  );
+                } else if (fle.type === "h6") {
+                  return (
+                    <h6
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </h6>
+                  );
+                } else if (fle.type === "p") {
+                  return (
+                    <p
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </p>
+                  );
+                } else if (fle.type === "h1") {
+                  return (
+                    <h1
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </h1>
+                  );
+                } else if (fle.type === "h1") {
+                  return (
+                    <h1
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </h1>
+                  );
+                } else if (fle.type === "h1") {
+                  return (
+                    <h1
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </h1>
+                  );
+                } else if (fle.type === "h1") {
+                  return (
+                    <h1
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </h1>
+                  );
+                } else if (fle.type === "h1") {
+                  return (
+                    <h1
+                      onChange={() => {
+                        this.handleChange(fle.key);
+                      }}
+                    >
+                      {fle.value}
+                    </h1>
+                  );
+                }
+              })}

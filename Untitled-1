@@ -1,0 +1,364 @@
+ {this.state.main.map((ele, pindex) => {
+            return (
+              <div
+                className="p_item"
+                id={pindex}
+                key={pindex}
+                style={ele.style}
+              >
+                {ele.data.map((fle, index) => {
+                  if (fle.type === "h1") {
+                    return (
+                      <Grid container justify={fle.justify}>
+                        <Grid
+                          item
+                          className="icon"
+                          style={{
+                            marginTop: "11px",
+                            paddingRight: "4px",
+                            display: "none"
+                          }}
+                          onClick={e => {
+                            this.handlePopper(index, e);
+                          }}
+                        >
+                          <AddCircle />
+                        </Grid>
+                        <Grid item>
+                          <h1
+                            className="children"
+                            contentEditable={true}
+                            suppressContentEditableWarning={true}
+                            id={"child" + pindex + index}
+                            key={pindex + index}
+                            onKeyPress={e => {
+                              this.handleChange(pindex, index, e);
+                            }}
+                            onFocus={e => {
+                              this.handleFocus(
+                                pindex,
+                                index,
+                                "child" + pindex + index
+                              );
+                            }}
+                          style={fle.style}
+                          >
+                            {fle.value}
+                          </h1>
+                        </Grid>
+                      </Grid>
+                    );
+                  } else if (fle.type === "h2") {
+                    return (
+                      <Grid container justify={fle.justify}>
+                        <Grid
+                          item
+                          className="icon"
+                          style={{
+                            marginTop: "11px",
+                            paddingRight: "4px",
+                            display: "none"
+                          }}
+                          onClick={e => {
+                            this.handlePopper(index, e);
+                          }}
+                        >
+                          <AddCircle />
+                        </Grid>
+                        <Grid item>
+                          <h2
+                            className="children"
+                            contentEditable={true}
+                            suppressContentEditableWarning={true}
+                            id={"child" + pindex + index}
+                            key={pindex + index}
+                            onKeyPress={e => {
+                              this.handleChange(pindex, index, e);
+                            }}
+                            onFocus={e => {
+                              this.handleFocus(
+                                pindex,
+                                index,
+                                "child" + pindex + index
+                              );
+                            }}
+                                                      style={fle.style}
+
+                          >
+                            {fle.value}
+                          </h2>
+                        </Grid>
+                      </Grid>
+                    );
+                  } else if (fle.type === "h3") {
+                    return (
+                      <Grid container justify={fle.justify}>
+                        <Grid
+                          item
+                          className="icon"
+                          style={{
+                            marginTop: "11px",
+                            paddingRight: "4px",
+                            display: "none"
+                          }}
+                          onClick={e => {
+                            this.handlePopper(index, e);
+                          }}
+                        >
+                          <AddCircle />
+                        </Grid>
+                        <Grid item>
+                          <h3
+                            className="children"
+                            contentEditable={true}
+                            suppressContentEditableWarning={true}
+                            id={"child" + pindex + index}
+                            key={pindex + index}
+                            onKeyPress={e => {
+                              this.handleChange(pindex, index, e);
+                            }}
+                            onFocus={e => {
+                              this.handleFocus(
+                                pindex,
+                                index,
+                                "child" + pindex + index
+                              );
+                            }}
+                                                      style={fle.style}
+
+                          >
+                            {fle.value}
+                          </h3>
+                        </Grid>
+                      </Grid>
+                    );
+                  } else if (fle.type === "h4") {
+                    return (
+                      <Grid container justify={fle.justify}>
+                        <Grid
+                          item
+                          className="icon"
+                          style={{
+                            marginTop: "11px",
+                            paddingRight: "4px",
+                            display: "none"
+                          }}
+                          onClick={e => {
+                            this.handlePopper(index, e);
+                          }}
+                        >
+                          <AddCircle />
+                        </Grid>
+                        <Grid item>
+                          <h4
+                            className="children"
+                            contentEditable={true}
+                            suppressContentEditableWarning={true}
+                            id={"child" + pindex + index}
+                            key={pindex + index}
+                            onKeyPress={e => {
+                              this.handleChange(pindex, index, e);
+                            }}
+                            onFocus={e => {
+                              this.handleFocus(
+                                pindex,
+                                index,
+                                "child" + pindex + index
+                              );
+                            }}
+                                                      style={fle.style}
+
+                          >
+                            {fle.value}
+                          </h4>
+                        </Grid>
+                      </Grid>
+                    );
+                  } else if (fle.type === "h5") {
+                    return (
+                      <Grid container justify={fle.justify}>
+                        <Grid
+                          item
+                          className="icon"
+                          style={{
+                            marginTop: "11px",
+                            paddingRight: "4px",
+                            display: "none"
+                          }}
+                          onClick={e => {
+                            this.handlePopper(index, e);
+                          }}
+                        >
+                          <AddCircle />
+                        </Grid>
+                        <Grid item>
+                          <h5
+                            className="children"
+                            contentEditable={true}
+                            suppressContentEditableWarning={true}
+                            id={"child" + pindex + index}
+                            key={pindex + index}
+                            onKeyPress={e => {
+                              this.handleChange(pindex, index, e);
+                            }}
+                            onFocus={e => {
+                              this.handleFocus(
+                                pindex,
+                                index,
+                                "child" + pindex + index
+                              );
+                            }}
+                                                      style={fle.style}
+
+                          >
+                            {fle.value}
+                          </h5>
+                        </Grid>
+                      </Grid>
+                    );
+                  } else if (fle.type === "h6") {
+                    return (
+                      <Grid container justify={fle.justify}>
+                        <Grid
+                          item
+                          className="icon"
+                          style={{
+                            marginTop: "11px",
+                            paddingRight: "4px",
+                            display: "none"
+                          }}
+                          onClick={e => {
+                            this.handlePopper(index, e);
+                          }}
+                        >
+                          <AddCircle />
+                        </Grid>
+                        <Grid item>
+                          <h6
+                            className="children"
+                            contentEditable={true}
+                            suppressContentEditableWarning={true}
+                            id={"child" + pindex + index}
+                            key={pindex + index}
+                            onKeyPress={e => {
+                              this.handleChange(pindex, index, e);
+                            }}
+                            onFocus={e => {
+                              this.handleFocus(
+                                pindex,
+                                index,
+                                "child" + pindex + index
+                              );
+                            }}
+                                                      style={fle.style}
+
+                          >
+                            {fle.value}
+                          </h6>
+                        </Grid>
+                      </Grid>
+                    );
+                  } else if (fle.type === "p") {
+                    return (
+                      <Grid container justify={fle.justify}>
+                        <Grid
+                          item
+                          className="icon"
+                          style={{
+                            marginTop: "11px",
+                            paddingRight: "4px",
+                            display: "none"
+                          }}
+                          onClick={e => {
+                            this.handlePopper(index, e);
+                          }}
+                        >
+                          <AddCircle />
+                        </Grid>
+                        <Grid item>
+                          <p
+                            className="children"
+                            contentEditable={true}
+                            suppressContentEditableWarning={true}
+                            id={"child" + pindex + index}
+                            key={pindex + index}
+                            onKeyPress={e => {
+                              this.handleChange(pindex, index, e);
+                            }}
+                            onFocus={e => {
+                              this.handleFocus(
+                                pindex,
+                                index,
+                                "child" + pindex + index
+                              );
+                            }}
+                                                      style={fle.style}
+                          >
+                            {fle.value}
+                          </p>
+                        </Grid>
+                      </Grid>
+                    );
+                  } else if (fle.type === "chart") {
+                    return (
+                      <Grid container justify={fle.justify}>
+                        <Grid
+                          item
+                          className="icon"
+                          style={{
+                            marginTop: "11px",
+                            paddingRight: "4px",
+                            display: "block"
+                          }}
+                          onClick={e => {
+                            this.handlePopper(index, e);
+                          }}
+                        >
+                          <AddCircle />
+                        </Grid>
+                        <Grid
+                          item
+                          onClick={e => {
+                            this.handleFocus(
+                              pindex,
+                              index,
+                              "child" + pindex + index
+                            );
+                          }}
+                        >
+                          <LineChart
+                            width={500}
+                            height={300}
+                            data={fle.value}
+                            margin={{
+                              top: 5,
+                              right: 30,
+                              left: 20,
+                              bottom: 5
+                            }}
+                          >
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <Tooltip />
+                            <Legend />
+                            <Line
+                              type="monotone"
+                              dataKey="pv"
+                              stroke="#8884d8"
+                              activeDot={{ r: 8 }}
+                            />
+                            <Line
+                              type="monotone"
+                              dataKey="uv"
+                              stroke="#82ca9d"
+                            />
+                          </LineChart>
+                        </Grid>
+                      </Grid>
+                    );
+                  }
+                })}
+              </div>
+            );
+          })}
